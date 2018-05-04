@@ -16,15 +16,13 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  win_combo = nil
   WIN_COMBINATIONS.each do |combo|
     if position_taken?(board,combo[0])
       if board[combo[0]] == board[combo[1]] && board[combo[0]] == board[combo[2]]
-        win_combo = combo
+        combo
       end
     end
   end
-  win_combo
 end
 
 def full?(board)
