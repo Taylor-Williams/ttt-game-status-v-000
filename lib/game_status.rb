@@ -19,7 +19,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |combo|
     if position_taken?(board,combo[0])
       if board[combo[0]] == board[combo[1]] && board[combo[0]] == board[combo[2]]
-        combo
+        return combo
       end
     end
   end
