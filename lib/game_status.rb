@@ -50,6 +50,6 @@ end
 def winner(board)
   combo = won?(board)
   if combo != nil
-    return board[combo[0]]
+    board[combo[0]]
   end
 end
